@@ -1,0 +1,41 @@
+package day10;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Test05 {
+	public static void main(String[] args) {
+		
+		Set<String> set = new HashSet<String>();
+		set.add("lee");
+		set.add("kin");
+		set.add("park");
+		set.add("ko");
+		set.add("lee");
+		
+		
+		
+		Iterator<String> it = set.iterator();
+		
+           while(it.hasNext()) {
+			
+			String data = it.next();
+			System.out.println(data.charAt(0)+("**"));
+			System.out.println(data);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

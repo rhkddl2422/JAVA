@@ -1,0 +1,44 @@
+package day08;
+
+public class Test04 {
+
+	public static void main(String[] args) {
+		String mgs1 = "hello";
+		String mgs2 = "hello";
+		
+		Person p1= new Person("全辨悼",22);
+		Person p2= new Person("全辨悼",23);
+		
+		System.out.println(mgs1.toString()); // 林家嘛绢窍搁  toString 积己凳
+		System.out.println(mgs2.toString());
+		
+		System.out.println(p1.toString());
+		System.out.println(p2);
+		System.out.println("=============================================");
+		Object obj=mgs1;
+		System.out.println(obj);
+	}
+
+}
+
+
+class Person{
+	
+	String name;
+	int age;
+	
+	public Person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	 public String toString()
+	 {
+		 return {"Person["+name+" : "+age+"]};
+		 
+		 
+	 }
+	
+	
+	
+}

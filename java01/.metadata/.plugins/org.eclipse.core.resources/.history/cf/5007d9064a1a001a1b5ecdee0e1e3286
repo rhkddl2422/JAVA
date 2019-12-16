@@ -1,0 +1,26 @@
+package day06;
+
+public class Account_test {
+
+	public static void main(String[] args) {
+		account a1 = new account();
+		
+		a1.setNumber("2019-12-09-001");
+		a1.setName("È«±æµ¿");
+		a1.setMoney(10);
+		a1.print();
+           
+		
+		account a2 = new account();
+		a1.setNumber("2019-12-09-001");
+		a1.setName("È«±æµ¢");
+		a1.setMoney(10);
+		a1.print();
+	
+		
+		a1.input(a2.output(2000));//°èÁÂÀÌÃ¼
+		account.transfer(a1,a2,10000);
+		
+		
+
+}

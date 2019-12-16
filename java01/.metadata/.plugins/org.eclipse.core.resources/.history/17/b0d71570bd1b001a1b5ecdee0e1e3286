@@ -1,0 +1,23 @@
+package day08;
+
+public class AnimalTest {
+
+	public static void main(String[] args) {
+		Animal[] animals = { new Dog("Áøµ¾°³","Ã¼¸®"), new Fish("Äí¿ì")
+				
+		};
+		
+		for(Animal data:animals)
+		{
+			data.breath();
+			
+			
+			
+		}
+		
+		
+		
+		
+	}
+
+}

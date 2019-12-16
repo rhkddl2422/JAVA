@@ -1,0 +1,23 @@
+package day07;
+
+public class PC extends Animal {
+	
+	String name;
+	
+	
+	public PC()
+	
+	{
+		super();
+	}
+	public PC(String name)
+	{
+		super();
+	}
+	
+	public void print()
+	{
+		System.out.printf("[%s %d]%n",kind,name);
+	}
+
+}

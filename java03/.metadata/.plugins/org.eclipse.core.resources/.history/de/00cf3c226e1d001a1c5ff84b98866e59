@@ -1,0 +1,98 @@
+package day10;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.swing.JOptionPane;
+
+import java.util.Iterator;
+
+public class Test06 {
+
+	
+
+	public static void main(String[] args) {
+		
+		Set<Book> bookList =new HashSet<Book>();
+		
+	//등록
+		
+		bookList.add(new Book("java",500));
+		bookList.add(new Book("sql",1500));
+		bookList.add(new Book("jsp",5500));
+		bookList.add(new Book("java",500));
+		bookList.add(new Book("hadoop",4500));
+	
+		//출력
+		Iterator<Book> it =bookList.iterator();
+		while(it.hasNext())
+		{
+			Book book =(Book) it.next();
+			
+			if(Book.price=<5000) {
+			System.out.println(book);
+			}
+			
+			
+			
+		}
+	//검색
+		while(it.hasNext()) {
+		String keyword = JOptionPane.showInputDialog("검색:도서명");
+		System.out.println(keyword+"도서 검색 결과");
+		
+		}
+		
+		
+		
+
+	}
+
+}
+class Book
+{
+	String title;
+	int price;
+	public Book(String title, int price)
+	{
+		super();
+		this.title =title;
+		this.price =price;
+		
+		
+	}
+	@Override
+	public String toString() {
+		return "Book [title=" + title + ", price=" + price + "]";
+	}
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + price;
+		result = prime * result + ((title == null) ? 0 : title.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Book other = (Book) obj;
+		if (price != other.price)
+			return false;
+		if (title == null) {
+			if (other.title != null)
+				return false;
+		} else if (!title.equals(other.title))
+			return false;
+		return true;
+	}
+	
+	
+	
+	
+}

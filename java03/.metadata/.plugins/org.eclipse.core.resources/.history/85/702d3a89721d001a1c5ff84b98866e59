@@ -1,0 +1,31 @@
+package day10;
+
+import java.util.*;
+
+public class Test07 {
+
+	public static void main(String[] args) {
+		Map<String,String> map = new HashMap<String,String>();
+		
+		map.put("java01","1234");
+		map.put("java01","1232");
+		map.put("java03","1234");
+		map.put("java04","1234");
+		map.put("java05","1234");
+		map.put("java06","1234");
+		map.put("java07","1234");
+		map.put("java08","1234");
+		map.put("java09","1234");
+		map.put("java10","1234");
+		map.put("java11","1234");
+		map.put("java12","1234");
+		map.put("java13","1234");
+		map.put("java14","1234");
+		
+		System.out.println(map.get("java01"));
+	}
+
+	
+	}
+
+}

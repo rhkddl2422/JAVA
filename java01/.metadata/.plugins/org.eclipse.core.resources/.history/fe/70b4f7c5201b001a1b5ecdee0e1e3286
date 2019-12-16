@@ -1,0 +1,34 @@
+package report;
+
+import day07.Animal;
+import day07.Dog;
+import day07.Fish;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		
+		Employee[] d;
+		Student[] f;
+		Teacher [] g; 
+		Person[] persons= { new Employee("이순신",10,"JAVA"),new Student("홍길동",20,200201)};
+				
+				
+				
+				for(Person data:persons) {
+					
+					if(data instanceof Employee)
+					{((Employee)data).print();     }
+					if(data instanceof Student)
+					{((Student)data).print();     }
+					
+				}
+				
+				
+				
+		};
+
+	}
+
+}

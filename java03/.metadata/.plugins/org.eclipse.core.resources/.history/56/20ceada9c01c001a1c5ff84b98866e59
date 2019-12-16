@@ -1,0 +1,24 @@
+package day02;
+
+public class Test04 {
+	public static void main(String[] args) {
+		int[] o = new int [5];
+		
+		int n=70;
+		boolean m = (n>70);
+		
+		
+		
+		
+		
+		
+		
+		System.out.println(n);
+		System.out.println(m);
+		
+		
+		
+	}
+}
+
+

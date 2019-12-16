@@ -1,0 +1,24 @@
+package day07;
+
+public class Fish extends Animal {
+	
+	String name;
+	
+	
+	public PC()
+	
+	{
+		super("물고기");
+	}
+	public PC(String name)
+	{
+		super("물고기");
+		this.name = name;
+	}
+	
+	public void print()
+	{
+		System.out.printf("[%s %d]%n",kind,name);
+	}
+
+}

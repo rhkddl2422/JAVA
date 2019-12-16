@@ -1,0 +1,119 @@
+package rep;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Scanner;
+import java.util.Set;
+
+import javax.swing.JOptionPane;
+
+
+
+
+
+public class BookMgr {
+	
+	Set<Book> bookList =new HashSet<Book>();
+	
+	
+	
+	
+	
+public void addBook(Book book){
+		
+		
+		
+		
+		bookList.add(new Book("sql",1500));
+		bookList.add(new Book("jsp",5500));
+		bookList.add(new Book("java",500));
+		bookList.add(new Book("hadoop",4500));
+		
+		
+}
+public void printBookList(){
+	
+	
+	
+		
+		//출력
+		String keyword =JOptionPane.showInputDialog("title");
+	    Iterator<Book> it =bookList.iterator();//set에있는거 읽기
+		while(it.hasNext())
+		{
+			Book book =(Book) it.next();
+			
+			if(book.title.toUpperCase().contains(keyword.toUpperCase())) {
+			System.out.println(book);
+			//contains는 같은글자를 다찾는다.
+			}
+			
+			
+			
+		}
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("삭제할 도서명을 입력하세요");
+		String msg = scanner.nextLine().trim();
+}
+		
+		
+@Override
+public String toString() {
+	return "BookMgr [bookList=" + bookList + "]";
+}
+public void booksearch(){
+	
+	Iterator<Book> it = bookList.iterator();
+	
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("삭제할 도서명을 입력하세요");
+	String msg = scanner.nextLine().trim();
+	
+	
+		while(it.hasNext()) {
+			Book book1=(Book)it.next();
+			if(book1.title.toUpperCase().contains(msg)) 
+					{
+				System.out.println(book1);
+				System.out.println("삭제할까요? y를 입력하면 삭제됩니다.");
+			    msg = scanner.nextLine().trim();
+			    if(msg.equalsIgnoreCase("y"))
+				it.remove();
+			    
+				}
+	
+		}}
+
+public void reform(){
+	
+	  Iterator<Book> it = bookList.iterator();
+	  Scanner scanner = new Scanner(System.in);
+		
+		String msg = scanner.nextLine().trim();
+		
+		//수정
+		System.out.println("수정할 도서명을 입력하세요");
+		msg =scanner.nextLine().trim();
+		it = bookList.iterator();
+
+		while(it.hasNext())
+		{
+			Book book =(Book) it.next();
+			if(book.title.contains(msg)) {
+			book.title=book.title+"___________";}
+		}		
+}}
+
+
+
+		
+	
+	
+	
+		
+	
+	
+
+

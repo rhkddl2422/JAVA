@@ -1,0 +1,27 @@
+package day02;
+
+public class Test04 {
+	public static void main(String[] args) {
+		int[] o = new int [5];
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		int[] i =new int[4];
+		
+		
+		String [] array = new String[5];
+		
+		System.out.println(o.length);
+		System.out.println(array.length);
+	}
+}
+
+

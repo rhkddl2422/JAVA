@@ -1,0 +1,75 @@
+package day06;
+
+
+
+public class account {
+
+	private String name;
+	private String number;
+	private int money;
+	
+	
+	public void input ( int money) // 메소드의 선언부
+	{
+	   this.money +=money;	
+		 return;
+		
+		//원래 가지고 있는 값은 this.변수로 표현 
+		
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name; 
+	}
+	public String getNumber() {
+		return number;
+	}
+	public void setNumber(String number) {
+		this.number = number;
+	}
+	public int getMoney() {
+		return money;
+	}
+	public void setMoney(int money) {
+		this.money = money;
+	}
+	
+	
+	
+	
+	
+	
+	
+	 public int output (int money)
+	{
+		 if(this.money>=money)
+		 {
+			this.money-=money;
+			
+			return money;
+		 }
+		 else {
+		 return 0;
+		 
+    }
+	}
+	
+
+	public void print(){
+	
+		System.out.printf("[%d:%s] 잔고:%d)%n",number,name,money);
+		
+		return;
+	
+	}
+	
+	public static void transfer(account from , account to, int money ) {
+		System.out.println("계좌이체");
+		System.out.println(from.number+"->"+to.number);
+		to.input(from.output(money));
+		
+	}
+	}
+	

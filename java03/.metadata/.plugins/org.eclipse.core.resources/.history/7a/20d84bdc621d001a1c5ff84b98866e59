@@ -1,0 +1,62 @@
+package day10;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+
+
+public class Test04 {
+
+	public static void main(String[] args) {
+	    
+//		List list1 = new ArrayList();
+		
+		List<String> list =new ArrayList<String>();
+		list.add("홍길동");
+		list.add("적길동");
+		list.add("리길동");
+		list.add("최길동");
+		System.out.println(list.size());
+		
+		
+		System.out.println("--------------for------------------");
+		for(int i=0;i<list.size();i++)
+		{
+			
+			System.out.println(list.get(i));
+			
+			
+			
+		}
+		
+		System.out.println("홍길동?"+list.contains("홍길동"));
+		
+		
+		Iterator<String> it = list.iterator();
+		
+		while(it.hasNext()) {
+			
+			String data = it.next();
+			System.out.println(data.charAt(0)+("**"));
+			System.out.println(data);
+		}
+		System.out.println("------------Iterrator 기반 삭제-------------------");
+		String rename = JOptionPane.showInputDialog("삭제할 이름을 정해주세요");
+		
+		it = list.iterator();
+         while(it.hasNext())
+         {
+        	 String data= it.next();
+        	 if(rename.equals(data))
+                 it.remove();
+         }
+         System.out.println(list);
+        	 
+        	 
+         }
+	}
+
+

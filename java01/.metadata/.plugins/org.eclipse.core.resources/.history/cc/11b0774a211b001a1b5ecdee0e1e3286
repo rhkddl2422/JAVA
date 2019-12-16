@@ -1,0 +1,33 @@
+package report;
+
+public class Employee extends Person {
+	
+	
+	String name;
+	int age;
+	String dept;
+
+	
+	
+	public Employee() {
+		
+	
+
+}
+	
+	public Employee (String name, int age, String dept)
+	{
+		this.name = name;
+		this.age = age;
+		this.dept =dept;
+	}
+	
+	@Override
+	public void print()
+	{
+		System.out.printf("이름:%s 나이:%d 과목:%s", this.name,this.age,this.dept);
+	}
+	
+	
+
+}

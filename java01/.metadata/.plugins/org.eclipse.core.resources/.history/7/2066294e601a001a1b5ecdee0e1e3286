@@ -1,0 +1,43 @@
+package day06;
+
+public class BookMgr {
+	
+	
+	
+	static int count=0;
+	
+	Book[] booklist= new Book[100];
+	
+	public void addBook(Book book)
+	{
+	
+		  booklist[count]=book;
+	       count++;
+			
+		
+	}
+	public void printBookList(Book booklist)
+	{
+	    System.out.print(booklist.getTitle());
+		
+		
+	}
+	
+	public void printTotalPrice (int A)
+	{
+		for(int j=0;j<booklist.length;j++)
+		{
+		int total_price = 0;
+		 total_price+= A;
+		
+		System.out.printf("총 도서가격은:%d",total_price);
+		
+		}
+	}
+	
+	
+	
+	
+	
+
+}

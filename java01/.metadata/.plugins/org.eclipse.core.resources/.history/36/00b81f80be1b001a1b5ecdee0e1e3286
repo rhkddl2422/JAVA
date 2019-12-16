@@ -1,0 +1,36 @@
+package day08;
+
+public class Test04 {
+
+	public static void main(String[] args) {
+		String mgs1 = "hello";
+		String mgs2 = "hello";
+		
+		Person p1= new Person("ȫ�浿",22);
+		Person p2= new Person("ȫ�浿",23);
+		
+		System.out.println(mgs1);
+		System.out.println(mgs2);
+		
+		System.out.println(p1);
+		System.out.println(p2);
+	}
+
+}
+
+
+class Person{
+	
+	String name;
+	int age;
+	
+	public Person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	
+	
+	
+	
+}

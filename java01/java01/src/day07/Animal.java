@@ -1,0 +1,14 @@
+package day07;
+
+public class Animal  {
+	protected String kind = "µ¿¹°ÀÇ Á¾·ù" ;
+
+	
+	public Animal(String kind) {
+		super();
+		this.kind = kind;
+	}
+	public void breath(){
+		System.out.println("Æó·Î ¼û½¬±â...");
+	}
+}

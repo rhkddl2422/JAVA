@@ -1,0 +1,32 @@
+package report;
+
+public class Teacher extends Person {
+	
+	
+	String name;
+	int age;
+	String subject;
+
+	
+	
+	public Teacher() {
+		super();
+	
+
+}
+	public Teacher(String name,int age,String subject)
+	{
+		this.name=name;
+		this.age=age;
+		this.subject=subject;
+	}
+
+	@Override 
+	public void print()
+	{
+		System.out.printf("%s %d", this.name,this.age);
+	}
+	
+	
+
+}
